@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campaigns - KindFund</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold kindfund-logo" href="index.html">
+            <span class="logo-heart">
+                <i class="bi bi-heart-fill"></i>
+            </span>
+            KindFund
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="campaigns.html">
+                        Campaigns
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        Login
+                    </a>
+                </li>
+
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-primary nav-register"
+                       href="register.html">
+                        Register
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= PAGE HEADER ================= -->
+
+<section class="modern-campaign-header">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <span class="campaign-page-label">
+                <i class="bi bi-heart-fill"></i>
+                MAKE AN IMPACT
+            </span>
+
+            <h1>
+                Support a Cause
+            </h1>
+
+            <p>
+                Choose a campaign you care about and help create
+                a meaningful change.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CAMPAIGNS ================= -->
+
+<section class="modern-campaigns-section">
+
+    <div class="container">
+
+        <!-- SEARCH -->
+
+        <div class="campaign-search-wrapper">
+
+            <div class="campaign-search">
+
+                <i class="bi bi-search"></i>
+
+                <input type="text"
+                       id="campaignSearch"
+                       placeholder="Search campaigns...">
+
+            </div>
+
+        </div>
+
+
+        <!-- CATEGORY FILTERS -->
+
+        <div class="campaign-filters text-center mb-5">
+
+            <button class="category-btn active"
+                    data-category="all">
+                All Campaigns
+            </button>
+
+            <button class="category-btn"
+                    data-category="education">
+                <i class="bi bi-book"></i>
+                Education
+            </button>
+
+            <button class="category-btn"
+                    data-category="medical">
+                <i class="bi bi-heart-pulse"></i>
+                Medical
+            </button>
+
+            <button class="category-btn"
+                    data-category="food">
+                <i class="bi bi-cup-hot"></i>
+                Food
+            </button>
+
+            <button class="category-btn"
+                    data-category="shelter">
+                <i class="bi bi-house"></i>
+                Shelter
+            </button>
+
+            <button class="category-btn"
+                    data-category="environment">
+                <i class="bi bi-tree"></i>
+                Environment
+            </button>
+
+        </div>
+
+
+        <!-- CAMPAIGN GRID -->
+
+        <div class="row g-4" id="campaignContainer">
+
+
+            <!-- ================= EDUCATION ================= -->
+
+            <div class="col-md-6 col-lg-4 campaign-item"
+                 data-category="education">
+
+                <div class="real-campaign-card">
+
+                    <div class="real-campaign-image">
+
+                        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80"
+                             alt="Children receiving education">
+
+                        <span class="real-badge education-badge">
+                            Education
+                        </span>
+
+                    </div>
+
+                    <div class="real-campaign-body">
+
+                        <h4>
+                            Education for Every Child
+                        </h4>
+
+                        <p>
+                            Help underprivileged children get access
+                            to education and learning materials.
+                        </p>
+
+                        <div class="campaign-fund-info">
+
+                            <strong>₹70,000</strong>
+
+                            <span>
+                                of ₹1,00,000
+                            </span>
+
+                        </div>
+
+                        <div class="modern-progress">
+                            <div style="width: 70%;"></div>
+                        </div>
+
+                        <div class="campaign-percent">
+                            70% funded
+                        </div>
+
+                        <a href="donate.html"
+                           class="btn btn-primary w-100 modern-donate-btn">
+                            Donate Now
+                            <i class="bi bi-heart-fill"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MEDICAL ================= -->
+
+            <div class="col-md-6 col-lg-4 campaign-item"
+                 data-category="medical">
+
+                <div class="real-campaign-card">
+
+                    <div class="real-campaign-image">
+
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
+                             alt="Medical support">
+
+                        <span class="real-badge medical-badge">
+                            Medical
+                        </span>
+
+                    </div>
+
+                    <div class="real-campaign-body">
+
+                        <h4>
+                            Medical Support for Families
+                        </h4>
+
+                        <p>
+                            Help families who need financial support
+                            for medical treatment.
+                        </p>
+
+                        <div class="campaign-fund-info">
+
+                            <strong>₹55,000</strong>
+
+                            <span>
+                                of ₹1,00,000
+                            </span>
+
+                        </div>
+
+                        <div class="modern-progress">
+                            <div style="width: 55%;"></div>
+                        </div>
+
+                        <div class="campaign-percent">
+                            55% funded
+                        </div>
+
+                        <a href="donate.html"
+                           class="btn btn-primary w-100 modern-donate-btn">
+                            Donate Now
+                            <i class="bi bi-heart-fill"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOOD ================= -->
+
+            <div class="col-md-6 col-lg-4 campaign-item"
+                 data-category="food">
+
+                <div class="real-campaign-card">
+
+                    <div class="real-campaign-image">
+
+                        <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&w=900&q=80"
+                             alt="Food donation">
+
+                        <span class="real-badge food-badge">
+                            Food
+                        </span>
+
+                    </div>
+
+                    <div class="real-campaign-body">
+
+                        <h4>
+                            Food for the Needy
+                        </h4>
+
+                        <p>
+                            Help provide nutritious meals to people
+                            facing food insecurity.
+                        </p>
+
+                        <div class="campaign-fund-info">
+
+                            <strong>₹80,000</strong>
+
+                            <span>
+                                of ₹1,00,000
+                            </span>
+
+                        </div>
+
+                        <div class="modern-progress">
+                            <div style="width: 80%;"></div>
+                        </div>
+
+                        <div class="campaign-percent">
+                            80% funded
+                        </div>
+
+                        <a href="donate.html"
+                           class="btn btn-primary w-100 modern-donate-btn">
+                            Donate Now
+                            <i class="bi bi-heart-fill"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SHELTER ================= -->
+
+            <div class="col-md-6 col-lg-4 campaign-item"
+                 data-category="shelter">
+
+                <div class="real-campaign-card">
+
+                    <div class="real-campaign-image">
+
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
+                             alt="Safe shelter">
+
+                        <span class="real-badge shelter-badge">
+                            Shelter
+                        </span>
+
+                    </div>
+
+                    <div class="real-campaign-body">
+
+                        <h4>
+                            Home for Families
+                        </h4>
+
+                        <p>
+                            Help families in need with safe and
+                            comfortable shelter.
+                        </p>
+
+                        <div class="campaign-fund-info">
+
+                            <strong>₹40,000</strong>
+
+                            <span>
+                                of ₹1,00,000
+                            </span>
+
+                        </div>
+
+                        <div class="modern-progress">
+                            <div style="width: 40%;"></div>
+                        </div>
+
+                        <div class="campaign-percent">
+                            40% funded
+                        </div>
+
+                        <a href="donate.html"
+                           class="btn btn-primary w-100 modern-donate-btn">
+                            Donate Now
+                            <i class="bi bi-heart-fill"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ENVIRONMENT ================= -->
+
+            <div class="col-md-6 col-lg-4 campaign-item"
+                 data-category="environment">
+
+                <div class="real-campaign-card">
+
+                    <div class="real-campaign-image">
+
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=900&q=80"
+                             alt="Tree plantation">
+
+                        <span class="real-badge environment-badge">
+                            Environment
+                        </span>
+
+                    </div>
+
+                    <div class="real-campaign-body">
+
+                        <h4>
+                            Plant More Trees
+                        </h4>
+
+                        <p>
+                            Support tree plantation and environmental
+                            protection initiatives.
+                        </p>
+
+                        <div class="campaign-fund-info">
+
+                            <strong>₹65,000</strong>
+
+                            <span>
+                                of ₹1,00,000
+                            </span>
+
+                        </div>
+
+                        <div class="modern-progress">
+                            <div style="width: 65%;"></div>
+                        </div>
+
+                        <div class="campaign-percent">
+                            65% funded
+                        </div>
+
+                        <a href="donate.html"
+                           class="btn btn-primary w-100 modern-donate-btn">
+                            Donate Now
+                            <i class="bi bi-heart-fill"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SCHOLARSHIP ================= -->
+
+            <div class="col-md-6 col-lg-4 campaign-item"
+                 data-category="education">
+
+                <div class="real-campaign-card">
+
+                    <div class="real-campaign-image">
+
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80"
+                             alt="Students scholarship">
+
+                        <span class="real-badge education-badge">
+                            Education
+                        </span>
+
+                    </div>
+
+                    <div class="real-campaign-body">
+
+                        <h4>
+                            Scholarships for Students
+                        </h4>
+
+                        <p>
+                            Help deserving students continue their
+                            higher education.
+                        </p>
+
+                        <div class="campaign-fund-info">
+
+                            <strong>₹30,000</strong>
+
+                            <span>
+                                of ₹50,000
+                            </span>
+
+                        </div>
+
+                        <div class="modern-progress">
+                            <div style="width: 60%;"></div>
+                        </div>
+
+                        <div class="campaign-percent">
+                            60% funded
+                        </div>
+
+                        <a href="donate.html"
+                           class="btn btn-primary w-100 modern-donate-btn">
+                            Donate Now
+                            <i class="bi bi-heart-fill"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= NO RESULTS ================= -->
+
+        <div id="noResults"
+             class="no-results d-none">
+
+            <div class="no-results-icon">
+                <i class="bi bi-search"></i>
+            </div>
+
+            <h4>
+                No campaigns found
+            </h4>
+
+            <p>
+                Try another search or select a different category.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="modern-footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-5 mb-4">
+
+                <h4>
+                    <i class="bi bi-heart-fill"></i>
+                    KindFund
+                </h4>
+
+                <p>
+                    A digital platform for making donations
+                    easier, safer and more transparent.
+                </p>
+
+            </div>
+
+            <div class="col-md-3 mb-4">
+
+                <h6>Quick Links</h6>
+
+                <a href="index.html">Home</a>
+                <a href="campaigns.html">Campaigns</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h6>Contact</h6>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    support@kindfund.com
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +91 7304272776
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center mb-0">
+            © 2026 KindFund. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
